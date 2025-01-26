@@ -1,3 +1,5 @@
+package az.academy.turing;
+
 public class Product implements Comparable<Product> {
 
     private String name;
@@ -55,17 +57,17 @@ public class Product implements Comparable<Product> {
     }
 
     @Override
-    public int compareTo(Product other) {
-        return this.name.compareTo(other.name);
+    public int compareTo(Product products) {
+        return this.name.compareTo(products.name);
     }
 
     @Override
     public String toString() {
-        return "Product{name='" + name + '\'' +
-                ", category='" + category + '\'' +
-                ", price=" + price +
-                ", rating=" + rating +
-                ", inStock=" + inStock + '}';
+        return "Product {name ='" + name + '\'' +
+                ", category ='" + category + '\'' +
+                ", price =" + price +
+                ", rating =" + rating +
+                ", inStock =" + inStock + '}';
     }
 
 }
